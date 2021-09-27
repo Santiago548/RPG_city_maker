@@ -22,7 +22,7 @@ export const Navigation = () => {
                 }}>Home</NavLink>
 
                 <NavLink
-                    to='/'
+                    to='/about'
                     exact
                     style={link}
                     activeStyle={{
