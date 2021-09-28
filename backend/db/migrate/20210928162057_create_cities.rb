@@ -2,7 +2,7 @@ class CreateCities < ActiveRecord::Migration[6.1]
   def change
     create_table :cities do |t|
       t.integer :population
-      t.string :region
+      t.string :environment
       t.string :government
       t.string :importMaterials
       t.string :exportMaterials

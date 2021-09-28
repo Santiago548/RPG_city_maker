@@ -4,7 +4,7 @@ export default class cityRandom extends Component {
 
     handleClick = event => {
         const population 
-        const region
+        const environment
         const government
         const importMaterials
         const exportMaterials
