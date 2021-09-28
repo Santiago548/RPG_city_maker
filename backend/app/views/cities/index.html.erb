@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Cities</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Population</th>
+      <th>Region</th>
+      <th>Government</th>
+      <th>Importmaterials</th>
+      <th>Exportmaterials</th>
+      <th>Armorer</th>
+      <th>Weaponssmith</th>
+      <th>Supplies</th>
+      <th>Pointofinterest1</th>
+      <th>Pointofinterest2</th>
+      <th>Pointofinterest3</th>
+      <th>Race1</th>
+      <th>Race2</th>
+      <th>Race3</th>
+      <th>Religion1</th>
+      <th>Religion2</th>
+      <th>Religion3</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cities.each do |city| %>
+      <tr>
+        <td><%= city.population %></td>
+        <td><%= city.region %></td>
+        <td><%= city.government %></td>
+        <td><%= city.importMaterials %></td>
+        <td><%= city.exportMaterials %></td>
+        <td><%= city.armorer %></td>
+        <td><%= city.weaponsSmith %></td>
+        <td><%= city.supplies %></td>
+        <td><%= city.pointOfInterest1 %></td>
+        <td><%= city.pointOfInterest2 %></td>
+        <td><%= city.pointOfInterest3 %></td>
+        <td><%= city.race1 %></td>
+        <td><%= city.race2 %></td>
+        <td><%= city.race3 %></td>
+        <td><%= city.religion1 %></td>
+        <td><%= city.religion2 %></td>
+        <td><%= city.religion3 %></td>
+        <td><%= link_to 'Show', city %></td>
+        <td><%= link_to 'Edit', edit_city_path(city) %></td>
+        <td><%= link_to 'Destroy', city, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New City', new_city_path %>

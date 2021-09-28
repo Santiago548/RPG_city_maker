@@ -1,0 +1,102 @@
+<%= form_with(model: city) do |form| %>
+  <% if city.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(city.errors.count, "error") %> prohibited this city from being saved:</h2>
+
+      <ul>
+        <% city.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :population %>
+    <%= form.number_field :population %>
+  </div>
+
+  <div class="field">
+    <%= form.label :region %>
+    <%= form.text_field :region %>
+  </div>
+
+  <div class="field">
+    <%= form.label :government %>
+    <%= form.text_field :government %>
+  </div>
+
+  <div class="field">
+    <%= form.label :importMaterials %>
+    <%= form.text_field :importMaterials %>
+  </div>
+
+  <div class="field">
+    <%= form.label :exportMaterials %>
+    <%= form.text_field :exportMaterials %>
+  </div>
+
+  <div class="field">
+    <%= form.label :armorer %>
+    <%= form.text_field :armorer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weaponsSmith %>
+    <%= form.text_field :weaponsSmith %>
+  </div>
+
+  <div class="field">
+    <%= form.label :supplies %>
+    <%= form.text_field :supplies %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pointOfInterest1 %>
+    <%= form.text_field :pointOfInterest1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pointOfInterest2 %>
+    <%= form.text_field :pointOfInterest2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pointOfInterest3 %>
+    <%= form.text_field :pointOfInterest3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :race1 %>
+    <%= form.text_field :race1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :race2 %>
+    <%= form.text_field :race2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :race3 %>
+    <%= form.text_field :race3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :religion1 %>
+    <%= form.text_field :religion1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :religion2 %>
+    <%= form.text_field :religion2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :religion3 %>
+    <%= form.text_field :religion3 %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

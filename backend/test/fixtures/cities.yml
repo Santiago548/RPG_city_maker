@@ -1,0 +1,39 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  population: 1
+  region: MyString
+  government: MyString
+  importMaterials: MyString
+  exportMaterials: MyString
+  armorer: MyString
+  weaponsSmith: MyString
+  supplies: MyString
+  pointOfInterest1: MyString
+  pointOfInterest2: MyString
+  pointOfInterest3: MyString
+  race1: MyString
+  race2: MyString
+  race3: MyString
+  religion1: MyString
+  religion2: MyString
+  religion3: MyString
+
+two:
+  population: 1
+  region: MyString
+  government: MyString
+  importMaterials: MyString
+  exportMaterials: MyString
+  armorer: MyString
+  weaponsSmith: MyString
+  supplies: MyString
+  pointOfInterest1: MyString
+  pointOfInterest2: MyString
+  pointOfInterest3: MyString
+  race1: MyString
+  race2: MyString
+  race3: MyString
+  religion1: MyString
+  religion2: MyString
+  religion3: MyString
